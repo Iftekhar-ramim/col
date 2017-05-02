@@ -1,0 +1,741 @@
+/*--------------------------------------------------------------------------------------
+Theme Name  : CHITTAGONG ONLINE LIMITED
+Theme URI   : http://col.bd.com
+Author URI  : http://v-linknetwork.com
+Description : INTERNET SERVICE 
+Author      : MONAYEM 
+Version     : 1.0
+----------------------------------------------------------------------------------------*/
+
+
+/*
+---------------------------
+    TABLE OF CONTENT
+---------------------------
+
+1. FONTS
+2. TYPHOGRAPHY
+3. HEADER
+4. NAVBAR 
+5. SLIDER 
+6. PRIZING SECTION
+7. CLIENT SECTION
+8. SERVICE SECTION
+*/
+
+
+/*--------------------
+   1. FONTS
+----------------------*/
+
+@font-face 
+
+{
+
+    font-family: 'OpenSans-Regular';
+
+    src: url('../fonts/OpenSans-Regular.woff');
+
+    src: url('../fonts/OpenSans-Regular.eot') format('embedded-opentype'),
+
+         url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+
+         url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+
+         url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+
+         url('../fonts/OpenSans-Regular.otf')  format('opentype');                
+
+}     
+
+
+@font-face 
+
+{
+
+    font-family: 'OpenSans-Semibold';
+
+    src: url('../fonts/OpenSans-Semibold.woff');
+
+    src: url('../fonts/OpenSans-Semibold.eot') format('embedded-opentype'),
+
+         url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
+
+         url('../fonts/OpenSans-Semibold.woff') format('woff'),
+
+         url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
+
+         url('../fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg'),
+
+         url('../fonts/OpenSans-Semibold.otf')  format('opentype');                
+
+} 
+
+
+@font-face 
+
+{
+
+    font-family: 'OpenSans-ExtraBold';
+
+    src: url('../fonts/OpenSans-ExtraBold.woff');
+
+    src: url('../fonts/OpenSans-ExtraBold.eot') format('embedded-opentype'),
+
+         url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+
+         url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+
+         url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'),
+
+         url('../fonts/OpenSans-ExtraBold.svg#OpenSans-ExtraBold') format('svg'),
+
+         url('../fonts/OpenSans-ExtraBold.otf')  format('opentype');                
+
+} 
+
+@font-face 
+
+{
+
+    font-family: 'OpenSans-Light';
+
+    src: url('../fonts/OpenSans-Light.woff');
+
+    src: url('../fonts/OpenSans-Light.eot') format('embedded-opentype'),
+
+         url('../fonts/OpenSans-Light.woff2') format('woff2'),
+
+         url('../fonts/OpenSans-Light.woff') format('woff'),
+
+         url('../fonts/OpenSans-Light.ttf') format('truetype'),
+
+         url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg'),
+
+         url('../fonts/OpenSans-Light.otf')  format('opentype');                
+
+}
+
+/*--------------------
+   2. TYPHOGRAPHY
+----------------------*/
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #555555;
+}
+
+p {
+    font-family: 'OpenSans-Regular';
+    font-size: 12px;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 700;
+    margin: 0 0 15px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'OpenSans-Regular' sans-serif;
+    font-weight: 550;
+}
+
+a:focus,
+a:hover {
+    outline: none;
+}
+
+a:hover {
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: table;
+    margin: 0 auto;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.padding-top {
+    padding-top: 100px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+/*--------------------
+   3. HEADER
+----------------------*/
+
+header
+{
+    position: relative; 
+}
+
+header .header-logo 
+{
+    padding:50px 0px;
+}
+
+header .logo-img 
+{
+   max-width: 100% ;
+   margin:0px 10px;
+   float:left;
+}
+
+header .logo .logo-title
+{
+    font-size: 85px;
+    font-family: 'OpenSans-Semibold' , sans-serif;
+    color:#fff;
+    padding-top:32px; 
+    display: block;
+}
+
+header .header-right .address h2 
+{
+    font-size: 30px;
+    font-family: 'OpenSans-Light' , sans-serif ;
+    color:#2e3192;
+}
+
+header .header-right .address p 
+{
+    font-size: 30px;
+    font-family: 'OpenSans-Light' , sans-serif ;
+    color:#ffffff;
+}
+
+header .header-right .contact
+{
+   font-family: 'OpenSans-Light' , sans-serif ;
+   font-size: 30px;
+   color:#2e3192;
+}
+
+header .header-right .contact i
+{
+    font-size: 30px;
+    color:#2e3192;
+}
+
+
+/*--------------------
+   4. NAVBAR
+----------------------*/
+
+.branding 
+{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+
+header .navbar 
+{
+    background-color: transparent;
+    border:none;
+}
+
+ .navbar-default .navbar-nav li a
+{
+    font-size: 16px;
+    font-family: 'OpenSans-Semibold';
+    color:#fff;
+    padding-left: 0px;
+    text-transform: uppercase;  
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus 
+{
+    
+    background-color: transparent;
+    color:#ed1c24;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus 
+{
+    background-color: transparent;
+    color:#ed1c24;
+}
+
+
+
+/*--------------------
+   5. SLIDER
+----------------------*/
+
+
+/*--------------------
+   6. PRIZING SECTION
+----------------------*/
+
+.pricing-section
+{
+    background:url("../images/prizing-bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover ;
+    background-position: center 0 ;
+    background-attachment: fixed;
+}
+
+.pricing-section .pricing
+{
+    position: relative;
+    color:#fff;
+    min-height: 614px;
+}
+
+
+
+.pricing-section .pricing-box
+{
+    background-color: #29a0d7 ;
+    bottom: 0;
+    content: "";
+    font-size: 16px;
+    line-height: 24px;
+    padding: 50px 100px 60px 120px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: skew(-15deg);
+    width: 525px;
+    z-index: 0;
+
+}
+
+.pricing-section .pricing-content
+{
+    transform: skew(15deg);
+}
+
+.pricing-section .heading h3
+{
+    font-family: 'OpenSans-Semibold' , sans-serif; 
+    font-size: 30px;
+    background: url("../images/prizing-before.png") no-repeat scroll 0 bottom;
+    color: #fff;
+    line-height: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 30px ;
+}
+.pricing-section .pricing-carosel .pricing-title
+{
+    font-size: 20px;
+    padding-bottom:20px ;
+}
+
+
+
+.pricing-section .pricing-carosel .pricing-details 
+{
+   
+    font-family: 'OpenSans-Regular' , sans-serif;  
+    font-size: 12px;
+    line-height: 1.9em;
+    padding:10px 0px 40px 0px;
+    text-align: justify;
+    border-bottom: 1px solid #79c2e4;
+}
+
+.pricing-section .pricing-carosel .pricing-button
+{
+    padding:10px 0px;
+}
+
+.pricing-section .pricing-carosel .pricing-button p
+{
+    font-family: 'OpenSans-Regular' , sans-serif;  
+    font-size: 20px;
+    color:#fff;
+}
+
+.pricing-section .pricing-carosel .pricing-button h2 
+{
+    font-family: 'OpenSans-Regular' , sans-serif;  
+    font-size: 30px;
+    color:#fff;
+}
+
+/*--------------------
+   6. CLIENT SECTION
+----------------------*/
+
+.client-section 
+{
+    background:#e5e5e5;
+    padding:20px 0px;
+}
+
+.client-section .heading h3 
+{
+    font-size: 30px;
+    font-family: 'OpenSans-ExtraBold' , sans-serif;
+    color:#3a434c;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.client-section .heading h3::before 
+{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    content: "";
+    margin-left: -25px;
+    background-color: #29a0d7;
+} 
+
+.client-section .heading h3 span 
+{
+    color:#3498db;
+}
+.client-section .client-item
+{
+    background: #fff;
+    margin-top:10px;
+}
+
+.client-section .client-item .client-img
+{
+    margin-bottom: 10px;
+}
+
+.client-section .client-item .client-title h2 
+{
+    font-family: 'OpenSans-Regular' , sans-serif; 
+    font-size: 30px;
+    color:#2e3192; 
+    padding:20px;
+    padding-bottom: 5px;
+}
+.client-section .client-item .client-details
+{
+    font-family: 'OpenSans-Regular' , sans-serif; 
+    font-size: 16px;
+    color:#bababa; 
+    padding:0px 20px;
+    text-align: justify;
+
+}
+
+.client-section .client-item button 
+{
+    background-color:#ed1c24;
+    border:none;
+    margin:20px;
+    padding:15px 20px;
+    border-radius: 5px;
+}
+
+.client-section .client-item button i
+{
+    color:#fff;
+    font-size: 20px;
+}
+
+/*--------------------
+   8. SERVICE
+----------------------*/
+
+.service-content .fa
+{
+    color:#2e3192;
+}
+
+.service-content .fa-file-text-o 
+{
+color:#fff; padding-top: 3px;
+}
+
+.service-content .btn-sq
+{
+    background:#ed1c24; width: 50px; height: 50px; 
+}
+
+.service-section h2
+{
+    font-family: 'OpenSans-Regular' , sans-serif; 
+    font-size: 30px;
+    color:#2e3192; 
+    
+    padding-bottom: 10px;
+}
+
+.service-section span h2
+{
+   margin-top:-30px;
+   font-family: 'OpenSans-Regular' , sans-serif; 
+    font-size: 30px;
+    color:#3498db; 
+    
+    padding-bottom: 5px;
+}
+
+.service-item
+{
+    font-family: 'OpenSans-Regular' , sans-serif; 
+    font-size: 16px;
+    color:#bababa; 
+	 padding-bottom: 10px;
+    text-align: justify;
+}
+
+/*--------------------
+   9. FOOTER
+----------------------*/
+
+footer .footer-main 
+{
+    background-color: #2e3192;
+    padding:20px 0px;
+}
+
+footer .footer-main .footer-title 
+{
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 20px;
+    color:#fff;
+    position: relative ;
+}
+footer .footer-main .footer-item .footer-title::before 
+{
+    content : "" ;
+    height:2px;
+    top:30px;
+    width: 50px;
+    background-color:#fff;
+    position: absolute;
+}
+
+footer .footer-main .footer-item .footer-details
+{
+    margin:30px 0px;
+} 
+
+footer .footer-main .footer-item .footer-details ul
+{
+    padding:0px;
+    margin:0px 0px;
+}
+footer .footer-main .footer-item .footer-details ul li 
+{
+    padding:10px 0px;
+    margin:0px ;
+    list-style: none;
+}
+footer .footer-main .footer-item .footer-details ul li a 
+{
+    padding:20px ;
+    text-decoration: none;
+    color:#fff;
+}
+footer .footer-main .footer-item .footer-details ul li i 
+{
+    color: #fff;
+}
+
+footer .footer-main .social-icon ul
+{
+    padding:0px;
+    margin:0px;
+} 
+
+footer .footer-main .social-icon ul li 
+{
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    float:left;
+}
+
+footer .footer-main .social-icon ul li a 
+{
+    background-color: #3498db;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 35px;
+    line-height: 2.4;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in 0s;
+    width: 35px;
+
+}
+
+footer .footer-bottom 
+{
+    background:url(../images/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center 0 ;
+    padding:20px 0px;
+}
+footer .footer-bottom .copyright-text 
+{
+    font-family: 'OpenSans-Light' , sans-serif;
+    font-size: 15px;
+    padding:20px 0px;
+    color:#fff; 
+}
+footer .footer-bottom .developby-text
+{
+    font-family: 'OpenSans-Light' , sans-serif;
+    font-size: 15px;
+    padding:20px 0px;
+    color:#fff; 
+}
+footer .footer-bottom .developby-text a 
+{
+    text-decoration: none ;
+    font-family: 'OpenSans-Light' , sans-serif;
+    color:#fff;
+    -moz-transition:all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in;
+    -o-transition:all 0.3s ease-in;
+    transition:all 0.3s ease-in;
+}
+footer .footer-bottom .developby-text a:hover 
+{
+    color:#2e3192;
+} 
+
+/*--------------------
+   9. STATIC BUTTON
+----------------------*/
+.left-icon-box 
+	{
+    z-index: 9999;
+    width: 50px;
+    position: fixed;
+    top: 150px;
+}
+
+.left-icon-box ul {
+    padding-left: 3px;
+    background: transparent;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.left-icon-box ul li {
+    padding: 8px 8px 8px 2px;
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px dotted #fff;
+}
+
+.left-icon-box ul li a {
+    text-decoration: none;
+}
+
+.form-tabs-header {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+	
+	z-index: 9999;
+    width: 50px;
+    position: fixed;
+    top: 150px;
+}
+
+.form-tabs-header>ul {
+    margin: 0;
+    padding: 0;
+}
+
+.form-tabs-header>ul>li.position-margin-newconnection {
+    position: relative;
+    right: 0;
+}
+
+.form-tabs-header>ul>li {
+    font-family: 'PTSans-Bold';
+    display: block;
+    padding: 0;
+    margin: 0 0 2px 0;
+    color: #fff;
+    right: 20px;
+	
+}
+
+.form-tabs-header>ul>li>a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-tabs-header>ul>li>a>img {
+    vertical-align: middle;
+	max-width: 100%;
+    height: auto;
+	border :0;
+}
